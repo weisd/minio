@@ -9,7 +9,7 @@ site/
 /.idea/
 /Minio.iml
 **/access.log
-vendor/
+# vendor/
 .DS_Store
 *.syso
 coverage.txt
