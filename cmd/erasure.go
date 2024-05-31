@@ -129,7 +129,7 @@ func getOnlineOfflineDisksStats(disksInfo []madmin.Disk) (onlineDisks, offlineDi
 	for _, disk := range disksInfo {
 		ep := disk.Endpoint
 		state := disk.State
-		if state != madmin.DriveStateOk && state != madmin.DriveStateUnformatted {
+		if state != madmin.DriveStateOk {
 			offlineDisks[ep]++
 			continue
 		}
